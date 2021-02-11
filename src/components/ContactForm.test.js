@@ -8,5 +8,7 @@ test("", () => {
   render(<ContactForm />);
 
   const firstNameInput = screen.getByLabelText(/first name/i);
-  
+  const lastNameInput = screen.getByLabelText(/last name/i);
+  const emailInput = screen.getByLabelText(/email/i);
+
 })
