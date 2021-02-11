@@ -44,11 +44,11 @@ In order to complete your mission for today, you will need to write tests to hel
 _If you come across any "unexpected" behaviors in the form UI (not the test), try this flow:_
 
 - [x] You may have noticed that the form validation for one of the inputs is a little off...
-- [ ] Write a test for the "expected" behavior (it will fail because something in the component is doing something unexpected)
-- [ ] Confirm that the test fails, because of the "unexpected" behavior
-- [ ] Look at the code in the project to find what is causing the behavior
-- [ ] Fix the code so that your new test passes
-- [ ] Celebrate that your test helped you find and fix a bug!
+- [x] Write a test for the "expected" behavior (it will fail because something in the component is doing something unexpected)
+- [x] Confirm that the test fails, because of the "unexpected" behavior
+- [x] Look at the code in the project to find what is causing the behavior
+- [x] Fix the code so that your new test passes
+- [x] Celebrate that your test helped you find and fix a bug!
 
 ## Stretch goals
 
@@ -62,6 +62,6 @@ _If you come across any "unexpected" behaviors in the form UI (not the test), tr
 
 ## Submission Format
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into `main` (student's Repository). **Please don't merge your own pull request**
-- [ ] From the home page of your repo, make sure you have your branch selected
-- [ ] Copy the URL and paste it into Canvas to submit your project
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into `main` (student's Repository). **Please don't merge your own pull request**
+- [x] From the home page of your repo, make sure you have your branch selected
+- [x] Copy the URL and paste it into Canvas to submit your project
