@@ -37,17 +37,20 @@ test("form submits and adds an object to the page", async () => {
   const button = screen.getByRole("button", { name: /submit/i });
   userEvent.click(button);
 
-  // (1) Note the use of find by to give state time to update and re-render
-  const firstNameText = screen.findByText(/daniel/i);
-  console.log(firstNameText); // This will return a promise
-  console.log(await firstNameText); // This will return the result once the promise is resolved
-  expect(await firstNameText).toBeInTheDocument();
+  // Note the use of find by to give state time to update and re-render
+  // Alternatively, can use await act(async () => {})
+  const preElementPromise = screen.findByText(/daniel/i);
+  console.log(preElementPromise); // This will return a promise
+  console.log(await preElementPromise); // This will return the result once the promise is resolved
 
-  // (2) This is a way to do it with .then()
-  firstNameText
-    .then(res => {
-      console.log(res);
-      expect(res).toBeInTheDocument();
+  // (1) Test using expect(await ...)...
+  expect(await preElementPromise).toBeInTheDocument();
+
+  // (2) Test using .then(...)
+  await preElementPromise
+    .then(preElement => {
+      console.log(preElement);
+      expect(preElement).toBeInTheDocument();
     })
     .catch(err => console.log(err))
 
